@@ -1,0 +1,23 @@
+.pagenation ul{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+}
+.pagenation ul li a {
+  padding: 5px 15px;
+  font-size: 18px;
+  border-bottom: 2px solid blue;  
+  font-weight: bold;
+  text-decoration: none;
+}
+.pagenation ul li a:hover {
+  color:blue ;
+  border-bottom: 2px solid rgba(0, 0, 255, 0.616);  
+}
+.pagenation a.activv{
+  color: red;
+  border-bottom: 2px solid red;  
+}

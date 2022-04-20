@@ -1,0 +1,41 @@
+.hisobot{
+  width: 80%;
+  padding: 0 30px;
+}
+
+.header-flex .saralash button{
+  margin-left: 15px;
+  padding: 10px 25px;
+}
+.header-flex{
+  color: #7B61FF;
+}
+.header-flex h1{
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.header-flex .saralash input{
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  background-color:#D6D6D6;
+  margin: 0 5px ;
+  color: #3d3d3d;
+}
+
+@media (max-width:1075px) {
+  .hisobot{
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .hisobot{
+    padding: 0 10px;
+  }
+  .hisobot .header-flex{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,186 @@
+@font-face {
+  font-family: muchiy;
+  src: url(../../../img/font/DancingScript-Bold.ttf);
+}
+.login_oyna{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+.login{
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 380px;
+  height: 430px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 80px 200px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  position: relative;
+}
+.form input{
+  position: absolute;
+  top: 30px;
+  left: 1.2rem;
+  width: 90%;
+  border: 2px solid #8A76EC;
+  border-radius: 30px;
+  color:black;
+  padding: 0.7rem 1.3rem;
+  outline: none;
+  font-size: 1rem;
+}
+.form input:hover{
+  border-color: wheat;
+}
+.form_label,
+.email_label
+{
+  position: absolute;
+  left: 2rem;
+  top: 2.3rem;
+  padding: 0 0.5rem;
+  color: gray;
+  cursor: text;
+  font-size: 1.3rem;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: white;
+}
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label{
+  top: 1rem;
+  left: 1.7rem;
+  font-size: 1rem;
+}
+
+/* email */
+.email_input:focus ~ .email_label,
+.email_input:not(:placeholder-shown).email_input:not(:focus) ~ .email_label{
+  top: 6rem;
+  left: 1.7rem;
+  font-size: 1rem;
+}
+.email_label{
+  top: 7rem;
+}
+.form_email input{
+  top: 6.5rem;
+}
+.parol input{
+  position: absolute;
+  top: 11rem;
+  left: 1.2rem;
+  width: 90%;
+  border: 2px solid #8A76EC;
+  border-radius: 30px;
+  color:black;
+  padding: 0.7rem 1.3rem;
+  outline: none;
+  font-size: 1rem;
+}
+.parol input:hover{
+  border-color: wheat;
+}
+.parol_label{
+  position: absolute;
+  left: 2rem;
+  top: 11.5rem;
+  padding: 0 0.5rem;
+  color: gray;
+  cursor: text;
+  font-size: 1.3rem;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: white;
+}
+.parol_input:focus ~ .parol_label,
+.parol_input:not(:placeholder-shown).parol_input:not(:focus) ~ .parol_label{
+  top: 10.5rem;
+  left: 1.7rem;
+  font-size: 1rem;
+}
+.parol span{
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  position: absolute;
+  top: 11.8rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.parol span img{
+  width: 100%;
+}
+.forma_input{
+  height: 220px;
+}
+.captcha{
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+  align-items: center;
+}
+.captcha input{
+  position: relative;
+  border-radius: 20px;
+  padding: 0 10px;
+  font-size: 15px;
+  width: 80%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border: 2px solid #7B61FF;
+}
+.captcha input:focus{
+  border: 2px solid #7b61ffb9;
+}
+
+.login button{
+  width: 60%;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background: linear-gradient(180deg, #E95151 0%, #BB0022 100%);
+  border-radius: 39px;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login button:hover{
+  background: linear-gradient(360deg, #E95151 0%, #BB0022 100%);
+}
+
+.captcha p{
+  user-select: none;
+  font-family: muchiy;
+  background-color: grey;
+  padding: 7px 25px;
+  border-radius: 15px;
+  font-size: 22px;  
+}
+.captcha #loginTozala{
+  position: absolute;
+  right: 35px;
+  background-color: white;
+  cursor: pointer;
+  padding: 0 8px;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: red;
+  border-radius: 50%;
+}
+.linkPath{
+  padding: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
